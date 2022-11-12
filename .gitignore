@@ -1,32 +1,22 @@
-# Prerequisites
-*.d
+#include <iostream>
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+using namespace std;
+int main()
+{
+    int num1, num2, result;
+    cin >> num1;
+    cin >> num2;
+    result = num1 + num2;
+    cout << num1 << "+" << num2 << "=" << result << endl;
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+    if (result >= 19) {
+        cout << result << endl;
+        cout << "Result is bigger or equal 19" << endl;
+    }
+    else if (result > 9) {
+        cout << "Result is bigger than 9 and lower than 19" << endl;
+     }
+    else if (result < 40) {
+        cout << "Result is lower than 40" << endl;
+    }
+   }
